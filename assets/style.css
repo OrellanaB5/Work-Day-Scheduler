@@ -1,0 +1,100 @@
+:root {
+  --past-color: #a8a8a8;
+  --present-color: #ff5f5f;
+  --future-color: #34d399;
+  --save-btn-color: #0694a2;
+  --save-btn-hover-color: #07b4cc;
+  --border-color: #cccccc;
+  --text-color: #000000;
+  --background-default: #ffffff; 
+  --hover-effect: #f3f4f6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: var(--background-default);
+  color: var(--text-color);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--hover-effect);
+  border-bottom: 2px solid var(--border-color);
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: var(--text-color);
+  border-left: 1px solid var(--border-color);
+  padding: 10px;
+  width: 100%;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex; 
+  align-items: center; 
+  border-top: 1px solid var(--border-color);
+}
+
+.hour {
+  background-color: var(--background-default);
+  color: var(--text-color);
+  border-top: 1px dashed var(--border-color);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.past, .present, .future {
+  transition: background-color 0.3s ease; 
+}
+
+.past {
+  background-color: var(--past-color);
+  color: var(--background-default);
+}
+
+.present {
+  background-color: var(--present-color);
+  color: var(--background-default);
+}
+
+.future {
+  background-color: var(--future-color);
+  color: var(--background-default);
+}
+
+.saveBtn {
+  border-left: 1px solid var(--border-color);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--save-btn-color);
+  color: var(--background-default);
+  cursor: pointer; 
+  padding: 0.5rem; 
+}
+
+.saveBtn:hover {
+  background-color: var(--save-btn-hover-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.saveBtn i:hover {
+  font-size: 20px; 
+  color: var(--background-default); 
+  transition: all 0.3s ease-in-out;
+}
